@@ -13,3 +13,10 @@ resource "okta_user_schema" "dob_extension" {
   type   = "string"
   master = "PROFILE_MASTER"
 }
+resource "okta_user_schema" "crn_extension" {
+  index  = "customer_reference_number"
+  title  = "Customer Reference Number"
+  required = true
+  type   = "string"
+  master = "PROFILE_MASTER"
+}
