@@ -20,3 +20,10 @@ resource "okta_user_schema" "crn_extension" {
   type   = "string"
   master = "PROFILE_MASTER"
 }
+resource "okta_user_schema" "test_extension" {
+  index  = "test_number"
+  title  = "Test Number"
+  required = true
+  type   = "string"
+  master = "PROFILE_MASTER"
+}
