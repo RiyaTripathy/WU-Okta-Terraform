@@ -26,4 +26,5 @@ resource "okta_user_schema" "crn_extension" {
   required = true
   type   = "string"
   master = "PROFILE_MASTER"
+  depends_on = [okta_user_schema.customer_reference_number]
 }
